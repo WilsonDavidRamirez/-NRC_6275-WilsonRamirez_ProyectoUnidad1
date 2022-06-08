@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -45,6 +45,64 @@
           </div>
         </div>
       </nav>
+      <br>
+
+      <div class="container">
+        <div class="row text-white text-center">
+          <center>
+            <div class="col-6 bg-dark ">
+                <form class="formulario" action="/enviar" method="post">
+                    <div class="tareas p-3 mb-2 bg-primary text-dark">
+                        <div class="campos">
+                                <div class="container">
+                                    <div class="row text-white text-center">
+                                      <div class="col-6 bg-primary">
+                                        <label for="nombre">Nombre</label>
+                                        <br>
+                                        <input class="entrada" id="tarea" name="tarea" type="text"> 
+                                      </div>
+                                      <div class="col-6 bg-primary">
+                                        <label for="Apellido">Apellido</label>
+                                        <br>
+                                        <input class="entrada" id="apellido" name="Apellido" type="text"> 
+                                      </div>
+                                      <div class="col-6 bg-primary">
+                                        <label type="email" for="Email">E-mail</label>
+                                        <br>
+                                        <input class="entrada" id="correo" name="tarea" type="text" placeholder="name@example.com"> 
+                                      </div>
+                                      <div class="col-6 bg-primary ">
+                                        <label for="contrasela">Contraseña</label>
+                                        <br>
+                                        <input class="entrada" id="contra" name="tarea" type="text"> 
+                                      </div>
+                                    </div>
+                                  </div>                    
+                           <div class="d-grid gap-2 col-6 mx-auto ">
+                                <br>
+                                <a class="btn btn-primary bg-white text-dark" href="../Login" role="button" type="submit">Iniciar Sesion</a>  
+                                <a class="btn btn-primary bg-white text-dark" href="../" role="button" type="submit">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </center>
+          <center>
+            <div class="col-4 bg-dark border">
+                Instrucciones
+            </div>
+          </center>
+            
+          
+          
+        </div>
+      </div>
+
+      
+
+
+
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
