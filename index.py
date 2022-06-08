@@ -3,7 +3,7 @@ from flask import Flask, redirect, request,render_template, url_for
 
 app= Flask(__name__)
 
-tareasPendientes = []
+usuarios = []
 
 @app.route('/' )
 def principal():
@@ -16,6 +16,10 @@ def Login():
 @app.route('/Registro')
 def Registo():
     return render_template('registro.html')
+
+@app.route('/Acerda_de')
+def AcerdaDe():
+    return render_template('acercaDe.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
