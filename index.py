@@ -10,11 +10,11 @@ def principal():
     return render_template('inicio.html')
 
 @app.route('/Login' )
-def principal():
+def Login():
     return render_template('login.html')
 
-@app.route('/Registo')
-def principal():
+@app.route('/Registro')
+def Registo():
     return render_template('registro.html')
 
 if __name__ == '__main__':
