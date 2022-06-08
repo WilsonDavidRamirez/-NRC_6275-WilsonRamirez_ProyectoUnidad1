@@ -6,9 +6,16 @@ app= Flask(__name__)
 tareasPendientes = []
 
 @app.route('/' )
-
 def principal():
     return render_template('inicio.html')
+
+@app.route('/Login' )
+def principal():
+    return render_template('login.html')
+
+@app.route('/Registo')
+def principal():
+    return render_template('registro.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
