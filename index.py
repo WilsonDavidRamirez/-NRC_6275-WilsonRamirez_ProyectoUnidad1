@@ -25,5 +25,25 @@ def AcerdaDe():
 def Introduccion():
     return render_template('intro.html')
 
+@app.route('/Componentes1')
+def Componentes1():
+    return render_template('componentes.html')
+
+@app.route('/Componentes2')
+def Componentes2():
+    return render_template('componentes1.html')
+
+@app.route('/Ejemplos')
+def Ejemplos():
+    return render_template('ejemplo.html')
+
+@app.route('/Plugins')
+def Plugins():
+    return render_template('pluginOpcionaes.html')
+
+@app.route('/Ejemplos1')
+def Ejemplos1():
+    return render_template('ejemplos1.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
